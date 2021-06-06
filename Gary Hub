@@ -1,0 +1,254 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CustomHub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local CMDX = Instance.new("TextButton")
+local InfYield = Instance.new("TextButton")
+local TrollHub = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Prislife = Instance.new("TextButton")
+local Flips = Instance.new("TextButton")
+local Walkwalls = Instance.new("TextButton")
+local Doxhub = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local OpenFrame = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+CustomHub.Name = "CustomHub"
+CustomHub.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = CustomHub
+Main.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Main.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Main.BorderSizePixel = 3
+Main.Position = UDim2.new(0.364375472, 0, 0.250347674, 0)
+Main.Size = UDim2.new(0, 366, 0, 359)
+Main.Draggable = true
+Main.Active = true
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Title.BorderSizePixel = 3
+Title.Size = UDim2.new(0, 366, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Gary Hub"
+Title.TextColor3 = Color3.fromRGB(255, 170, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Close.BorderSizePixel = 3
+Close.Position = UDim2.new(0.879781425, 0, 0, 0)
+Close.Size = UDim2.new(0, 44, 0, 50)
+Close.Image = "http://www.roblox.com/asset/?id=575072552"
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = Main
+CMDX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.BorderColor3 = Color3.fromRGB(255, 170, 0)
+CMDX.BorderSizePixel = 3
+CMDX.Position = UDim2.new(0.0218579173, 0, 0.172701985, 0)
+CMDX.Size = UDim2.new(0, 127, 0, 50)
+CMDX.Font = Enum.Font.SourceSans
+CMDX.Text = "CMD-X"
+CMDX.TextColor3 = Color3.fromRGB(255, 170, 0)
+CMDX.TextScaled = true
+CMDX.TextSize = 14.000
+CMDX.TextWrapped = true
+CMDX.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+InfYield.Name = "Inf-Yield"
+InfYield.Parent = Main
+InfYield.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfYield.BorderColor3 = Color3.fromRGB(255, 170, 0)
+InfYield.BorderSizePixel = 3
+InfYield.Position = UDim2.new(0.0218579173, 0, 0.345403939, 0)
+InfYield.Size = UDim2.new(0, 127, 0, 50)
+InfYield.Font = Enum.Font.SourceSans
+InfYield.Text = "Inf-Yield"
+InfYield.TextColor3 = Color3.fromRGB(255, 170, 0)
+InfYield.TextScaled = true
+InfYield.TextSize = 14.000
+InfYield.TextWrapped = true
+InfYield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+TrollHub.Name = "Troll Hub"
+TrollHub.Parent = Main
+TrollHub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TrollHub.BorderColor3 = Color3.fromRGB(255, 170, 0)
+TrollHub.BorderSizePixel = 3
+TrollHub.Position = UDim2.new(0.0218579173, 0, 0.518105865, 0)
+TrollHub.Size = UDim2.new(0, 127, 0, 50)
+TrollHub.Font = Enum.Font.SourceSans
+TrollHub.Text = "Troll Hub"
+TrollHub.TextColor3 = Color3.fromRGB(255, 170, 0)
+TrollHub.TextScaled = true
+TrollHub.TextSize = 14.000
+TrollHub.TextWrapped = true
+TrollHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/Troll/main/troll", true))()
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Fly.BorderSizePixel = 3
+Fly.Position = UDim2.new(0.0218579173, 0, 0.693593383, 0)
+Fly.Size = UDim2.new(0, 127, 0, 50)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 170, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+Fly.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/fly/main/fly", true))()
+end)
+
+Prislife.Name = "Pris life"
+Prislife.Parent = Main
+Prislife.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Prislife.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Prislife.BorderSizePixel = 3
+Prislife.Position = UDim2.new(0.633879781, 0, 0.169916511, 0)
+Prislife.Size = UDim2.new(0, 127, 0, 50)
+Prislife.Font = Enum.Font.SourceSans
+Prislife.Text = "Pris Life"
+Prislife.TextColor3 = Color3.fromRGB(255, 170, 0)
+Prislife.TextScaled = true
+Prislife.TextSize = 14.000
+Prislife.TextWrapped = true
+Prislife.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+end)
+
+Flips.Name = "Flips"
+Flips.Parent = Main
+Flips.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Flips.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Flips.BorderSizePixel = 3
+Flips.Position = UDim2.new(0.633879781, 0, 0.342618465, 0)
+Flips.Size = UDim2.new(0, 127, 0, 50)
+Flips.Font = Enum.Font.SourceSans
+Flips.Text = "R15 Flips"
+Flips.TextColor3 = Color3.fromRGB(255, 170, 0)
+Flips.TextScaled = true
+Flips.TextSize = 14.000
+Flips.TextWrapped = true
+Flips.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/flip/main/flip", true))()
+end)
+
+Walkwalls.Name = "Walk walls"
+Walkwalls.Parent = Main
+Walkwalls.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Walkwalls.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Walkwalls.BorderSizePixel = 3
+Walkwalls.Position = UDim2.new(0.633879781, 0, 0.51532042, 0)
+Walkwalls.Size = UDim2.new(0, 127, 0, 50)
+Walkwalls.Font = Enum.Font.SourceSans
+Walkwalls.Text = "Wall Walk"
+Walkwalls.TextColor3 = Color3.fromRGB(255, 170, 0)
+Walkwalls.TextScaled = true
+Walkwalls.TextSize = 14.000
+Walkwalls.TextWrapped = true
+Walkwalls.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/walls/main/wallsp", true))()
+end)
+
+Doxhub.Name = "R6 Spider"
+Doxhub.Parent = Main
+Doxhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Doxhub.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Doxhub.BorderSizePixel = 3
+Doxhub.Position = UDim2.new(0.633879781, 0, 0.693593383, 0)
+Doxhub.Size = UDim2.new(0, 127, 0, 50)
+Doxhub.Font = Enum.Font.SourceSans
+Doxhub.Text = "R6 Spider"
+Doxhub.TextColor3 = Color3.fromRGB(255, 170, 0)
+Doxhub.TextScaled = true
+Doxhub.TextSize = 14.000
+Doxhub.TextWrapped = true
+Doxhub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/Spider/main/spider", true))()
+end)
+
+Title_2.Name = "Title"
+Title_2.Parent = Main
+Title_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Title_2.BorderSizePixel = 3
+Title_2.Position = UDim2.new(0, 0, 0.860724211, 0)
+Title_2.Size = UDim2.new(0, 366, 0, 50)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Gary Hub"
+Title_2.TextColor3 = Color3.fromRGB(255, 170, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = CustomHub
+OpenFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenFrame.BackgroundTransparency = 1.000
+OpenFrame.Position = UDim2.new(0.0073909834, 0, 0.468706548, 0)
+OpenFrame.Size = UDim2.new(0, 121, 0, 45)
+OpenFrame.Image = "rbxassetid://3570695787"
+OpenFrame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+OpenFrame.ScaleType = Enum.ScaleType.Slice
+OpenFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+OpenFrame.SliceScale = 0.120
+
+Open.Name = "Open"
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(0.0743801594, 0, 0.111111112, 0)
+Open.Size = UDim2.new(0, 103, 0, 35)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 170, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function PMZQEO_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.OpenFrame.Visible = true
+	end)
+end
+coroutine.wrap(PMZQEO_fake_script)()
+local function XHTFYIO_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.parent.Main.Visible = true
+	end)
+end
+coroutine.wrap(XHTFYIO_fake_script)()
+
